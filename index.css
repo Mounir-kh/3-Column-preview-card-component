@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/*Div for all containers*/
+.containers{
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.container{
+    width: 25%;
+    padding: 2%;
+}
+/*First container properties*/
+.container1{
+    background-color: var(--Bright-orange);
+    border-radius: 8px 0 0 8px;
+}
+.container1 button{
+    color: var(--Bright-orange);
+}
+/*Second container properties*/
+.container2{
+    background-color: var(--Dark-cyan);
+}
+.container2 button{
+    color: var(--Dark-cyan);
+}
+/*Third container properties*/
+.container3{
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 8px 8px 0;
+}
+.container3 button{
+    color: var(--Very-dark-cyan);
+}
+/*Containers elements properties*/
+h1{
+    text-transform: uppercase;
+    margin-top: 15%;
+    color: white;
+}
+p{
+ margin-top: 15%;
+ color: white;
+ line-height: 33px;
+}
+button{
+   margin-top: 30%;
+   padding: 4% 10%;
+   border-radius: 30px;
+   border: 0px;
+   margin-bottom: 15px;
+}
+/*Button when hover*/
+.container1 button:hover{
+    color: white;
+    background-color: var(--Bright-orange);
+    border: solid white 2px;
+}
+.container2 button:hover{
+    color: white;
+    background-color: var(--Dark-cyan);
+    border: solid white 2px;
+}
+.container3 button:hover{
+    color: white;
+    background-color: var(--Very-dark-cyan);
+    border: solid white 2px;
+}
+/*Media query*/
+@media screen and (max-width: 500px){
+    body{
+        height: auto;
+        margin-top: 10%;
+        position: relative;
+    }
+    .containers{
+        display: block;
+        margin-bottom: 10%;
+    }
+    .container{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 0;
+        padding: 5%;
+    }
+    .container1{
+        border-radius: 8px 8px 0 0;
+
+    }
+    .container3{
+        border-radius: 0 0 8px 8px;
+    }
+    button{
+        margin-bottom: 5%;
+    }
+    .attribution{
+        display: none;
+    
+    }
+}
+
+
+.attribution { 
+    font-size: 11px;  
+    position: absolute;
+    margin-right: auto;
+    bottom: 5%;
+    left: 40%;
+    margin: auto;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
